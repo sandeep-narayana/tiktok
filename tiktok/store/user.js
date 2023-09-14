@@ -14,10 +14,12 @@ export const useUserStore = defineStore("user", () => {
   async function getMsg() {
     console.log("store");
     try {
-      const response = await fetch("https://fakestoreapi.com/products");
+      const response = await fetch("http://localhost:5172/api/categories");
+      //const response = await fetch("https://fakestoreapi.com/products");
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
+      console.log("response", response);
       const data = await response.json();
       console.log(data);
       return data;

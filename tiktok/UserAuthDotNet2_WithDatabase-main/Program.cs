@@ -69,7 +69,8 @@ if (app.Environment.IsDevelopment())
 app.UseCors(builder =>
 {
     builder
-        .WithOrigins("http://localhost:8080")// Replace with your Vue.js app's domain and port
+        // .WithOrigins("http://localhost:8080")// Replace with your Vue.js app's domain and port
+        .AllowAnyOrigin()
         .AllowAnyHeader()
         .AllowAnyMethod();
 });
