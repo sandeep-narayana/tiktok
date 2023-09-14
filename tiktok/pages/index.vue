@@ -4,6 +4,7 @@
   <h3>Count: {{ count }}</h3>
 
   <button @click="increment">Increment</button>
+  <button @click="get">Get Msg</button>
 </template>
 
 <script setup>
@@ -18,6 +19,10 @@ const increment = () => {
   store.increment();
 };
 
+const get = () => {
+  console.log(store.getMsg());
+};
+
 // Return variables directly
-store, increment;
+store, increment, get;
 </script>

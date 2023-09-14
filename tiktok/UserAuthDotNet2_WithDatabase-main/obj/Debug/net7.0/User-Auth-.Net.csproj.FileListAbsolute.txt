@@ -1,0 +1,169 @@
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/appsettings.Development.json
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/appsettings.json
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/User-Auth-.Net
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/User-Auth-.Net.deps.json
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/User-Auth-.Net.runtimeconfig.json
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/User-Auth-.Net.pdb
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/Microsoft.OpenApi.dll
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/User-Auth-.Net.csproj.AssemblyReference.cache
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/User-Auth-.Net.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/User-Auth-.Net.AssemblyInfoInputs.cache
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/User-Auth-.Net.AssemblyInfo.cs
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/User-Auth-.Net.csproj.CoreCompileInputs.cache
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/User-Auth-.Net.MvcApplicationPartsAssemblyInfo.cs
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/User-Auth-.Net.MvcApplicationPartsAssemblyInfo.cache
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/staticwebassets/msbuild.User-Auth-.Net.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/staticwebassets/msbuild.build.User-Auth-.Net.props
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.User-Auth-.Net.props
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.User-Auth-.Net.props
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/staticwebassets.build.json
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/staticwebassets.development.json
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/scopedcss/bundle/User-Auth-.Net.styles.css
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/User-Auth-.Net.csproj.CopyComplete
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/refint/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/User-Auth-.Net.pdb
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/User-Auth-.Net.genruntimeconfig.cache
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/obj/Debug/net7.0/ref/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/nspiraappcbd/Documents/GitHub/User-Auth-.Net/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/appsettings.Development.json
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/appsettings.json
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/User-Auth-.Net
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/User-Auth-.Net.deps.json
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/User-Auth-.Net.runtimeconfig.json
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/User-Auth-.Net.pdb
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.OpenApi.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.csproj.AssemblyReference.cache
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.AssemblyInfoInputs.cache
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.AssemblyInfo.cs
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.csproj.CoreCompileInputs.cache
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.MvcApplicationPartsAssemblyInfo.cs
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.MvcApplicationPartsAssemblyInfo.cache
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/staticwebassets/msbuild.User-Auth-.Net.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/staticwebassets/msbuild.build.User-Auth-.Net.props
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.User-Auth-.Net.props
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.User-Auth-.Net.props
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/staticwebassets.build.json
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/staticwebassets.development.json
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/scopedcss/bundle/User-Auth-.Net.styles.css
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.csproj.CopyComplete
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/refint/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.pdb
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.genruntimeconfig.cache
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/ref/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Dapper.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Npgsql.dll
+/Users/nspiraappcbd/Documents/GitHub/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/BCrypt.Net-Next.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/appsettings.Development.json
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/appsettings.json
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/User-Auth-.Net
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/User-Auth-.Net.deps.json
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/User-Auth-.Net.runtimeconfig.json
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/User-Auth-.Net.pdb
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/BCrypt.Net-Next.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Dapper.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Microsoft.OpenApi.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Npgsql.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.csproj.AssemblyReference.cache
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.AssemblyInfoInputs.cache
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.AssemblyInfo.cs
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.csproj.CoreCompileInputs.cache
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.MvcApplicationPartsAssemblyInfo.cs
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.MvcApplicationPartsAssemblyInfo.cache
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/staticwebassets/msbuild.User-Auth-.Net.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/staticwebassets/msbuild.build.User-Auth-.Net.props
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.User-Auth-.Net.props
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.User-Auth-.Net.props
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/staticwebassets.build.json
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/staticwebassets.development.json
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/scopedcss/bundle/User-Auth-.Net.styles.css
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.csproj.CopyComplete
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/refint/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.pdb
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/User-Auth-.Net.genruntimeconfig.cache
+/Users/nspiraappcbd/Documents/GitHub/Vue_Auth_.Net/UserAuthDotNet2_WithDatabase/obj/Debug/net7.0/ref/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/appsettings.Development.json
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/appsettings.json
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/User-Auth-.Net
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/User-Auth-.Net.deps.json
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/User-Auth-.Net.runtimeconfig.json
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/User-Auth-.Net.pdb
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/BCrypt.Net-Next.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/Dapper.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/Microsoft.OpenApi.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/Npgsql.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/User-Auth-.Net.csproj.AssemblyReference.cache
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/User-Auth-.Net.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/User-Auth-.Net.AssemblyInfoInputs.cache
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/User-Auth-.Net.AssemblyInfo.cs
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/User-Auth-.Net.csproj.CoreCompileInputs.cache
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/User-Auth-.Net.MvcApplicationPartsAssemblyInfo.cs
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/User-Auth-.Net.MvcApplicationPartsAssemblyInfo.cache
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/staticwebassets/msbuild.User-Auth-.Net.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/staticwebassets/msbuild.build.User-Auth-.Net.props
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.User-Auth-.Net.props
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.User-Auth-.Net.props
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/staticwebassets.build.json
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/staticwebassets.development.json
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/scopedcss/bundle/User-Auth-.Net.styles.css
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/User-Auth-.Net.csproj.CopyComplete
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/refint/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/User-Auth-.Net.pdb
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/User-Auth-.Net.genruntimeconfig.cache
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/ref/User-Auth-.Net.dll
