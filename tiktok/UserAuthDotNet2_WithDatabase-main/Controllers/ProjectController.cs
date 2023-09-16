@@ -19,13 +19,16 @@ namespace UserAuthDotBet2_WithDatabase
 
         private IUserRepository _user;
 
-        public ProjectController(ILogger<ProjectController> logger, ICategoryRepository cat, IProductRepository product, ICartRepository cart, IUserRepository user)
+        private IWishListRepository _wishList;
+
+        public ProjectController(ILogger<ProjectController> logger, ICategoryRepository cat, IProductRepository product, ICartRepository cart, IUserRepository user, IWishListRepository wishList)
         {
             _logger = logger;
             _cat = cat;
             _product = product;
             _cart = cart;
             _user = user;
+            _wishList = wishList;
         }
 
 
@@ -67,6 +70,7 @@ namespace UserAuthDotBet2_WithDatabase
         }
 
         [HttpGet("cart")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<Cart>>> GetUserCart()
         {
 
@@ -157,6 +161,32 @@ namespace UserAuthDotBet2_WithDatabase
             return Ok(user);
         }
 
+        [HttpGet("wishlist")]
+        [Authorize]
+        public async Task<ActionResult<Product>> GetWishList()
+        {
+
+            var userClaims = HttpContext.User.Claims;
+
+            // Find the claim with the user's ID:
+            var userIdClaim = userClaims.FirstOrDefault(claim => claim.Type == "Id");
+
+            // Extract the user's ID as an integer:
+            int userId = userIdClaim != null && int.TryParse(userIdClaim.Value, out int parsedUserId) ? parsedUserId : -1; // Default value if the claim is not found or parsing fails
+
+            //Throw an exception if the user ID is -1
+            if (userId == -1)
+            {
+                throw new Exception("User ID not found or invalid.");
+            }
+
+            // Use the user ID to fetch the user data
+            var wishList = await _wishList.getWishListByUserID(userId);
+
+            // Return the user data
+            return Ok(wishList);
+        }
+
 
     }
 
@@ -207,5 +237,4 @@ namespace UserAuthDotBet2_WithDatabase
         [JsonPropertyName("user_id")]
         public int UserId { get; set; } // Added userId property
     }
-
 }

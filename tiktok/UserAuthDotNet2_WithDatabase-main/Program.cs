@@ -11,6 +11,7 @@ builder.Services.AddTransient<IAuthRepository, AuthRepository>();
 builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 builder.Services.AddTransient<IProductRepository, ProductRepository>();
 builder.Services.AddTransient<ICartRepository, CartRepository>();
+builder.Services.AddTransient<IWishListRepository, WishListRepository>();
 
 builder.Services.AddTransient<IUserRepository, UserRepository>();
 
