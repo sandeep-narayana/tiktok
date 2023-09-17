@@ -187,6 +187,31 @@ namespace UserAuthDotBet2_WithDatabase
             return Ok(wishList);
         }
 
+        [HttpDelete("wishlist")]
+        [Authorize]
+
+        public async Task<ActionResult<bool>> DeleteproductFromWishlist([FromQuery] int productId)
+        {
+            var userClaims = HttpContext.User.Claims;
+
+            // Find the claim with the user's ID:
+            var userIdClaim = userClaims.FirstOrDefault(claim => claim.Type == "Id");
+
+            // Extract the user's ID as an integer:
+            int userId = userIdClaim != null && int.TryParse(userIdClaim.Value, out int parsedUserId) ? parsedUserId : -1; // Default value if the claim is not found or parsing fails
+
+            //Throw an exception if the user ID is -1
+            if (userId == -1)
+            {
+                throw new Exception("User ID not found or invalid.");
+            }
+
+            // Use the user ID to fetch the user data
+            var response = await _wishList.deleteProductById(productId, userId);
+            // Return the user data
+            return Ok(response);
+        }
+
 
     }
 
