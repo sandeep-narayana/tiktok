@@ -25,7 +25,8 @@ public class OrderRepository : BaseRepository, IOrderRepository
             UserId = UserId
         });
         return res.AsList();
-        throw new NotImplementedException();
+
+
     }
 
     public Task<List<string>> PlaceOrders()
