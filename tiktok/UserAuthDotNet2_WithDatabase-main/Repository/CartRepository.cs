@@ -26,7 +26,7 @@ public class CartRepository : BaseRepository, ICartRepository
 
     public async Task<string> AddToCart(Product product, int userId)
     {
-        var query = "INSERT INTO cart (user_id, name, description, image, price, quantity) VALUES (@UserId, @Name, @Description, @Image, @Price, @Quantity)";
+        var query = "INSERT INTO cart (name, description, image, price, user_id, quantity, product_id) VALUES (@Name, @Description, @Image, @Price, @UserId, @Quantity, @ProductId)";
 
         using var con = NewConnection;
 
@@ -37,7 +37,8 @@ public class CartRepository : BaseRepository, ICartRepository
             Description = product.Description,
             Image = product.Image,
             Price = product.Price,
-            Quantity = 1 // You can set the quantity to 1 when adding a single product to the cart
+            Quantity = 1, // You can set the quantity to 1 when adding a single product to the cart
+            ProductId = product.Id
         });
 
         if (res > 0)

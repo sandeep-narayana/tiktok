@@ -237,5 +237,9 @@ namespace UserAuthDotBet2_WithDatabase
         [JsonPropertyName("user_id")]
         public int UserId { get; set; } // Added userId property
         public int Quantity { get; set; }
+
+        [JsonPropertyName("product_id")]
+        public int ProductId { get; set; }
+
     }
 }
