@@ -21,7 +21,9 @@ namespace UserAuthDotBet2_WithDatabase
 
         private IWishListRepository _wishList;
 
-        public ProjectController(ILogger<ProjectController> logger, ICategoryRepository cat, IProductRepository product, ICartRepository cart, IUserRepository user, IWishListRepository wishList)
+        private IOrderRepository _orders;
+
+        public ProjectController(ILogger<ProjectController> logger, ICategoryRepository cat, IProductRepository product, ICartRepository cart, IUserRepository user, IWishListRepository wishList, IOrderRepository orders)
         {
             _logger = logger;
             _cat = cat;
@@ -29,6 +31,7 @@ namespace UserAuthDotBet2_WithDatabase
             _cart = cart;
             _user = user;
             _wishList = wishList;
+            _orders = orders;
         }
 
 
@@ -133,6 +136,31 @@ namespace UserAuthDotBet2_WithDatabase
                 Console.WriteLine(ex.Message);
                 return StatusCode(500, "An error occurred while adding the product to the cart.");
             }
+        }
+
+        [HttpDelete("cart")]
+        [Authorize]
+
+        public async Task<ActionResult<bool>> DeleteproductFromCart([FromQuery] int productId)
+        {
+            var userClaims = HttpContext.User.Claims;
+
+            // Find the claim with the user's ID:
+            var userIdClaim = userClaims.FirstOrDefault(claim => claim.Type == "Id");
+
+            // Extract the user's ID as an integer:
+            int userId = userIdClaim != null && int.TryParse(userIdClaim.Value, out int parsedUserId) ? parsedUserId : -1; // Default value if the claim is not found or parsing fails
+
+            //Throw an exception if the user ID is -1
+            if (userId == -1)
+            {
+                throw new Exception("User ID not found or invalid.");
+            }
+
+            // Use the user ID to fetch the user data
+            var response = await _cart.deleteProductById(productId, userId);
+            // Return the user data
+            return Ok(response);
         }
 
         [HttpGet("user")]
@@ -249,6 +277,33 @@ namespace UserAuthDotBet2_WithDatabase
                 Console.WriteLine(ex.Message);
                 return StatusCode(500, "An error occurred while adding the product to the wishlist.");
             }
+        }
+
+
+        [HttpGet("orders")]
+        [Authorize]
+        public async Task<ActionResult<Product>> GetAllOrders()
+        {
+
+            var userClaims = HttpContext.User.Claims;
+
+            // Find the claim with the user's ID:
+            var userIdClaim = userClaims.FirstOrDefault(claim => claim.Type == "Id");
+
+            // Extract the user's ID as an integer:
+            int userId = userIdClaim != null && int.TryParse(userIdClaim.Value, out int parsedUserId) ? parsedUserId : -1; // Default value if the claim is not found or parsing fails
+
+            //Throw an exception if the user ID is -1
+            if (userId == -1)
+            {
+                throw new Exception("User ID not found or invalid.");
+            }
+
+            // Use the user ID to fetch the user data
+            var wishList = await _orders.GetOrders(userId);
+
+            // Return the user data
+            return Ok(wishList);
         }
 
 

@@ -6,6 +6,9 @@ public interface ICartRepository
 {
     public Task<List<Cart>> getCartById(int UserId);
     public Task<string> AddToCart(Product product, int userId);
+
+    public Task<bool> deleteProductById(int ProductId, int userId);
+
 }
 
 public class CartRepository : BaseRepository, ICartRepository
@@ -49,5 +52,17 @@ public class CartRepository : BaseRepository, ICartRepository
         {
             return "Failed to add the product to the cart";
         }
+    }
+
+    public async Task<bool> deleteProductById(int ProductId, int UserId)
+    {
+
+        var query = "DELETE FROM cart WHERE product_id = @ProductId AND user_id = @UserId";
+        var con = NewConnection;
+        return await con.ExecuteAsync(query, new
+        {
+            ProductId = ProductId,
+            UserId = UserId
+        }) > 0;
     }
 }

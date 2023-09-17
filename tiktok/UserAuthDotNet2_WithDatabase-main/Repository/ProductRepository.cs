@@ -24,7 +24,7 @@ public class ProductRepository : BaseRepository, IProductRepository
 
     }
 
-    async public  Task<Product> getProductById(int productId)
+    async public Task<Product> getProductById(int productId)
     {
         var query = "SELECT * FROM products WHERE id = @Id";
         var con = NewConnection;

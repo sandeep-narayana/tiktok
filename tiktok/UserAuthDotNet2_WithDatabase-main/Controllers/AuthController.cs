@@ -168,5 +168,28 @@ namespace UserAuthDotBet2_WithDatabase
             public string Password { get; set; }
         }
 
+        public class Orders
+        {
+            public int Id { get; set; }
+            [JsonPropertyName("order_id")]
+
+            public string OrderId { get; set; }
+
+            [JsonPropertyName("product_id")]
+            public int ProductId { get; set; }
+
+            public int Quantity { get; set; }
+
+            [JsonPropertyName("order_price")]
+            public decimal OrderPrice { get; set; }
+
+            [JsonPropertyName("order_date")]
+            public DateTime OrderDate { get; set; }
+
+            [JsonPropertyName("user_id")]
+            public int UserId { get; set; }
+
+        }
+
     }
 }
