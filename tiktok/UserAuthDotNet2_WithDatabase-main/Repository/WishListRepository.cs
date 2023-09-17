@@ -7,7 +7,7 @@ public interface IWishListRepository
 
     public Task<bool> deleteProductById(int ProductId, int userId);
 
-    public Task<string> AddToWishlist(Product product, int userId);
+    public Task<string> AddToWishlist(int ProductId, int userId);
 }
 
 public class WishListRepository : BaseRepository, IWishListRepository
@@ -17,9 +17,27 @@ public class WishListRepository : BaseRepository, IWishListRepository
 
     }
 
-    public Task<string> AddToWishlist(Product product, int userId)
+    public async Task<string> AddToWishlist(int ProductId, int userId)
     {
-        
+        var query = "INSERT INTO wishlist (user_id, product_id) VALUES (@UserId, @ProductId)";
+
+        using var con = NewConnection;
+
+        var res = await con.ExecuteAsync(query, new
+
+        {
+            UserId = userId,
+            ProductId = ProductId
+        });
+
+        if (res > 0)
+        {
+            return "Product added to wishlist successfully";
+        }
+        else
+        {
+            return "Failed to add the product to the wishlist";
+        }
     }
 
     public async Task<bool> deleteProductById(int ProductId, int UserId)
@@ -44,6 +62,6 @@ public class WishListRepository : BaseRepository, IWishListRepository
         return wishlist.AsList();
     }
 
-    
+
 }
 

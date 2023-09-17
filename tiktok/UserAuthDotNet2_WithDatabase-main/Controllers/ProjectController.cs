@@ -212,6 +212,45 @@ namespace UserAuthDotBet2_WithDatabase
             return Ok(response);
         }
 
+        [HttpPost("wishlist/add")]
+        [Authorize]
+        public async Task<ActionResult<string>> AddtoWishList([FromQuery] int productId)
+        {
+            try
+            {
+
+                var userClaims = HttpContext.User.Claims;
+                // Find the claim with the user's ID:
+                var userIdClaim = userClaims.FirstOrDefault(claim => claim.Type == "Id");
+                // Extract the user's ID as an integer:
+                int userId = userIdClaim != null && int.TryParse(userIdClaim.Value, out int parsedUserId) ? parsedUserId : -1; // Default value if the claim is not found or parsing fails
+
+                //Throw an exception if the user ID is -1
+                if (userId == -1)
+                {
+                    throw new Exception("User ID not found or invalid.");
+                }
+
+                // find product with id
+                var product = await _product.getProductById(productId);
+
+                if (product == null)
+                {
+                    throw new Exception("Product not found.");
+                }
+
+
+                var result = await _wishList.AddToWishlist(product.Id, userId);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception for debugging purposes
+                Console.WriteLine(ex.Message);
+                return StatusCode(500, "An error occurred while adding the product to the wishlist.");
+            }
+        }
+
 
     }
 
