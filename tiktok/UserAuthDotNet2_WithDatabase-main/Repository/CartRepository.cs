@@ -26,7 +26,7 @@ public class CartRepository : BaseRepository, ICartRepository
 
     public async Task<string> AddToCart(Product product, int userId)
     {
-        const string query = "INSERT INTO cart (user_id, name, description, image, price, quantity) VALUES (@UserId, @Name, @Description, @Image, @Price, @Quantity)";
+        var query = "INSERT INTO cart (user_id, name, description, image, price, quantity) VALUES (@UserId, @Name, @Description, @Image, @Price, @Quantity)";
 
         using var con = NewConnection;
 
