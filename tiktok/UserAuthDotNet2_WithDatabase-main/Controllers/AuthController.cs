@@ -191,6 +191,10 @@ namespace UserAuthDotBet2_WithDatabase
 
             public List<Product> products { get; set; }
 
+            [JsonPropertyName("payment_type_id")]
+
+            public int PaymentTypeId { get; set; }
+
         }
 
     }

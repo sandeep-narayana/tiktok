@@ -306,6 +306,39 @@ namespace UserAuthDotBet2_WithDatabase
             return Ok(wishList);
         }
 
+        [HttpPost("orders")]
+        [Authorize]
+        public async Task<ActionResult<String>> PlaceOrders([FromQuery] int PaymentTypeId)
+        {
+
+            var userClaims = HttpContext.User.Claims;
+
+            // Find the claim with the user's ID:
+            var userIdClaim = userClaims.FirstOrDefault(claim => claim.Type == "Id");
+
+            // Extract the user's ID as an integer:
+            int userId = userIdClaim != null && int.TryParse(userIdClaim.Value, out int parsedUserId) ? parsedUserId : -1; // Default value if the claim is not found or parsing fails
+
+            //Throw an exception if the user ID is -1
+            if (userId == -1)
+            {
+                throw new Exception("User ID not found or invalid.");
+            }
+
+            // use the userid to fetch the cart item (only selected ones)(selected one to be imp in future)
+            var cart = await _cart.getCartById(userId);
+
+            if (cart.Count == 0)
+            {
+                throw new Exception("No selected item found in cart");
+            }
+            // Use the user ID to fetch the user data
+            var orderPlace = await _orders.placeOrders(cart, userId, PaymentTypeId);
+
+            // Return the user data
+            return Ok(orderPlace);
+        }
+
 
     }
 
