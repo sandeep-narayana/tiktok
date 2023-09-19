@@ -159,6 +159,8 @@ namespace UserAuthDotBet2_WithDatabase
             public string FirstName { get; set; }
             [JsonPropertyName("second_name")] // Specify the JSON property name
             public string LastName { get; set; }
+
+            [JsonIgnore]
             public string Password { get; set; }
         }
 
