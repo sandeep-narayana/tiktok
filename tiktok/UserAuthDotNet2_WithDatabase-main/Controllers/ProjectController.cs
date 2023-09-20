@@ -91,11 +91,6 @@ namespace UserAuthDotBet2_WithDatabase
             }
 
             var cart = await _cart.getCartById(userId);
-
-            if (cart == null || !cart.Any())
-            {
-                return NoContent(); // Return 204 No Content if the cart is empty or doesn't exist.
-            }
             return Ok(cart);
         }
 
