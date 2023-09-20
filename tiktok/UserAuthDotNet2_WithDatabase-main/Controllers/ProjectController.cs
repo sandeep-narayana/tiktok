@@ -339,6 +339,41 @@ namespace UserAuthDotBet2_WithDatabase
             return Ok(orderPlace);
         }
 
+        [HttpPut("change_quantity")]
+        [Authorize]
+        public async Task<ActionResult<bool>> ChangeQuantity([FromQuery] int cartId, int newQuantity)
+        {
+
+            if (newQuantity == 0)
+            {
+                throw new Exception("Cant set a value 0");
+            }
+            var userClaims = HttpContext.User.Claims;
+
+            // Find the claim with the user's ID:
+            var userIdClaim = userClaims.FirstOrDefault(claim => claim.Type == "Id");
+
+            // Extract the user's ID as an integer:
+            int userId = userIdClaim != null && int.TryParse(userIdClaim.Value, out int parsedUserId) ? parsedUserId : -1; // Default value if the claim is not found or parsing fails
+
+            //Throw an exception if the user ID is -1
+            if (userId == -1)
+            {
+                throw new Exception("User ID not found or invalid.");
+            }
+
+            // use the userid to fetch the cart item (only selected ones)(selected one to be imp in future)
+            var cart = await _cart.getCartById(userId);
+
+            if (cart.Count == 0)
+            {
+                throw new Exception("No selected item found in cart");
+            }
+
+            var quantityChanged = await _cart.changeQuantity(cartId, newQuantity, userId);
+            return Ok(quantityChanged);
+
+        }
 
     }
 

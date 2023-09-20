@@ -9,6 +9,7 @@ public interface ICartRepository
 
     public Task<bool> deleteProductById(int ProductId, int userId);
 
+    public Task<bool> changeQuantity(int cartId, int newQuantity, int userId);
 }
 
 public class CartRepository : BaseRepository, ICartRepository
@@ -63,6 +64,20 @@ public class CartRepository : BaseRepository, ICartRepository
         {
             ProductId = ProductId,
             UserId = UserId
+        }) > 0;
+    }
+
+    public async Task<bool> changeQuantity(int cartId, int newQuantity, int userId)
+    {
+        var query = "UPDATE cart SET quantity = @NewQuantity WHERE id = @Id AND user_id = @UserId";
+        var con = NewConnection;
+
+        return await con.ExecuteAsync(query, new
+        {
+            NewQuantity = newQuantity,
+            Id = cartId,
+            UserId = userId
+
         }) > 0;
     }
 }
