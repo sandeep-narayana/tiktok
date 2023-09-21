@@ -167,3 +167,5 @@
 /Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/User-Auth-.Net.pdb
 /Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/User-Auth-.Net.genruntimeconfig.cache
 /Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/obj/Debug/net7.0/ref/User-Auth-.Net.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/Mailjet.Client.dll
+/Users/nspiraappcbd/Documents/GitHub/Tiktok Clone/tiktok/tiktok/UserAuthDotNet2_WithDatabase-main/bin/Debug/net7.0/Newtonsoft.Json.dll
