@@ -7,7 +7,7 @@ namespace UserAuthDotBet2_WithDatabase.Repositories;
 public interface IAuthRepository
 {
     Task<bool> CheckAuthentication(UserCredentials userCredentials);
-    Task<bool> RegisterUser(User user);
+    Task<bool> RegisterUser(User user, string otp);
 }
 
 public class AuthRepository : BaseRepository, IAuthRepository
@@ -41,14 +41,43 @@ public class AuthRepository : BaseRepository, IAuthRepository
     }
 
 
-    public async Task<bool> RegisterUser(User user)
+    public async Task<bool> RegisterUser(User user, string otp)
     {
+
+        using var con = NewConnection;
+        // SQL query to cofim the otp with the username
+        var otpConfirmationQuery = "SELECT * FROM otp_verification where email = @Email AND used = @Bool";
+        var emailWithotp = await con.QueryAsync<OtpVerification>(otpConfirmationQuery, new
+        {
+            Email = user.Email,
+            Bool = false
+
+        });
+        // this will return empty collection 
+        if (emailWithotp.Count() == 0)
+        {
+            throw new Exception("No data fopund for otp verification");
+        }
+
+        // if confirm then mark it used and move forward
+        var markedUsedQuery = "UPDATE otp_verification SET used = @True WHERE email = @UserEmail AND otp = @Otp";
+        var isChanged = await con.ExecuteAsync(markedUsedQuery, new
+        {
+            UserEmail = user.Email,
+            Otp = otp,
+            True = true
+        }) > 0;
+
+        if (!isChanged)
+        {
+            throw new Exception("Something went wrong");
+        }
+
         // SQL query to insert a new user into the database.
-        var query = "INSERT INTO users (first_name,last_name ,email, password) VALUES (@FirstName,@LastName,@Email, @Password)";
+        var registrationQuery = "INSERT INTO users (first_name,last_name ,email, password) VALUES (@FirstName,@LastName,@Email, @Password)";
 
         // Hash the password before storing it in the database.
         var hashedPassword = HashPassword(user.Password);
-
         var parameters = new
         {
             FirstName = user.FirstName,
@@ -57,8 +86,7 @@ public class AuthRepository : BaseRepository, IAuthRepository
             Password = hashedPassword
         };
 
-        using var con = NewConnection;
-        await con.ExecuteAsync(query, parameters);
+        await con.ExecuteAsync(registrationQuery, parameters);
         return true;
 
     }
@@ -70,5 +98,10 @@ public class AuthRepository : BaseRepository, IAuthRepository
         string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password, salt);
 
         return hashedPassword;
+    }
+
+    public class OtpVerification
+    {
+
     }
 }

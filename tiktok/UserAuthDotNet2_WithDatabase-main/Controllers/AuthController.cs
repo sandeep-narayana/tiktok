@@ -20,31 +20,32 @@ namespace UserAuthDotBet2_WithDatabase
 
         private IUserRepository _user;
 
-        public AuthController(ILogger<AuthController> logger, IConfiguration config, IAuthRepository auth, IUserRepository user)
+        private IOtpRepository _otp;
+
+        public AuthController(ILogger<AuthController> logger, IConfiguration config, IAuthRepository auth, IUserRepository user, IOtpRepository otp)
         {
             _logger = logger;
             _config = config;
             _auth = auth;
             _user = user;
+            _otp = otp;
         }
 
         [HttpPost("register")]
-        public async Task<ActionResult<string>> Register([FromBody] User user)
+        public async Task<ActionResult<string>> Register([FromBody] RegistrationData registrationData)
         {
 
             try
             {
-                // Validate the registration request, check if the username or email is already taken, etc.
-                // Perform registration logic, such as creating a new user in your database with hashed password.
 
+                var user = registrationData.user;
+                var otp = registrationData.otp;
                 // For this example, let's assume you have a method in your _auth repository to handle registration.
-                var registrationResult = await _auth.RegisterUser(user);
+                var registrationResult = await _auth.RegisterUser(user, otp);
 
                 if (registrationResult)
                 {
-                    // Registration successful, generate and return a JWT token.
-                    // var token = GenerateToken(user.Email);
-                    return Ok();
+                    return Ok("User registration successfull");
                 }
                 else
                 {
@@ -125,6 +126,39 @@ namespace UserAuthDotBet2_WithDatabase
             }
         }
 
+        [HttpPost("send_otp")]
+        public async Task<ActionResult<string>> SendOtp([FromBody] string userEmail)
+        {
+            try
+            {
+                // check whether email already registered or not
+
+                // create an otp
+                int otp = new Random().Next(100000, 999999);
+                string otpString = otp.ToString();
+
+                // save the data in data base 
+                var otpSaved = await _otp.saveOtpInDataBase(otpString, userEmail);
+                if (otpSaved)
+                {
+                    // send the mail to the user
+                    await EmailController.SendMail(userEmail, otpString);
+
+                    return Ok("Otp Saved Successfully and Email send to the user via email");
+                }
+                else
+                {
+                    throw new Exception("Error");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while processing the welcome request.");
+                return StatusCode(500, "Internal Server Error");
+            }
+        }
+
 
         private string GenerateToken(string name, int id)
         {
@@ -160,8 +194,14 @@ namespace UserAuthDotBet2_WithDatabase
             [JsonPropertyName("second_name")] // Specify the JSON property name
             public string LastName { get; set; }
 
-            [JsonIgnore]
             public string Password { get; set; }
+        }
+
+        public class RegistrationData
+        {
+            public User user { get; set; }
+            public string otp { get; set; }
+
         }
 
         public class UserCredentials

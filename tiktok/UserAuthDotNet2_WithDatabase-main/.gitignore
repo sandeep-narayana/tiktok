@@ -1,0 +1,5 @@
+# Ignore the .vscode folder
+.vscode/
+
+# Ignore files or folders with the name .FixedVariable
+*.FixedVariable
