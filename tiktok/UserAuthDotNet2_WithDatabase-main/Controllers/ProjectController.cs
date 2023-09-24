@@ -404,6 +404,7 @@ namespace UserAuthDotBet2_WithDatabase
         public string Description { get; set; }
         public string Image { get; set; }
         public decimal Price { get; set; }
+        [JsonPropertyName("category_id")]
         public int CategoryId { get; set; } // Assuming you have a category ID for the product
     }
 
