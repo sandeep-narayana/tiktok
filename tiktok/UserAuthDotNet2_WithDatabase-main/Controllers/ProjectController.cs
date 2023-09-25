@@ -370,6 +370,27 @@ namespace UserAuthDotBet2_WithDatabase
 
         }
 
+        [HttpGet("users")]
+        [Authorize]
+        public async Task<ActionResult<List<User>>> GetUsers()
+        {
+            try
+            {
+                // Check whether the user has the permission or not
+                // If yes, then get the result
+                var users = await _user.getusers();
+
+                return Ok(users); // Return a 200 OK response with the list of users
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions here and return an appropriate error response
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+
+
     }
 
     public class Category

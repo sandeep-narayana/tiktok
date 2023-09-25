@@ -6,7 +6,8 @@ namespace UserAuthDotBet2_WithDatabase.Repositories;
 public interface IUserRepository
 {
     public Task<User> getUserByEmail(string email);
-     public Task<User> getUser(int id);
+    public Task<User> getUser(int id);
+    public Task<List<User>> getusers();
 
 }
 
@@ -42,4 +43,11 @@ public class UserRepository : BaseRepository, IUserRepository
         return res;
     }
 
+    public async Task<List<User>> getusers()
+    {
+        var query = "SELECT * FROM users";
+        var con = NewConnection;
+        var users = await con.QueryAsync<User>(query);
+        return users.ToList();
+    }
 }

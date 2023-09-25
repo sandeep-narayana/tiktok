@@ -185,7 +185,7 @@ namespace UserAuthDotBet2_WithDatabase
 
         public class User
         {
-            [JsonPropertyName("userid")]
+            [JsonPropertyName("user_id")]
             public int userid { get; set; }
             public string Email { get; set; }
 
@@ -195,6 +195,9 @@ namespace UserAuthDotBet2_WithDatabase
             public string LastName { get; set; }
 
             public string Password { get; set; }
+
+            public string Image { get; set; }
+            public Role Role { get; set; }
         }
 
         public class RegistrationData
@@ -237,6 +240,13 @@ namespace UserAuthDotBet2_WithDatabase
 
             public int PaymentTypeId { get; set; }
 
+        }
+
+        public enum Role
+        {
+            SuperAdmin = 1,
+            Admin = 2,
+            Customer = 3
         }
 
     }
