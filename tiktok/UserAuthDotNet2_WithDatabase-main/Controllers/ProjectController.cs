@@ -411,6 +411,27 @@ namespace UserAuthDotBet2_WithDatabase
             }
         }
 
+        [HttpPut("user")]
+        [Authorize]
+        public async Task<ActionResult<bool>> UpdateProduct([FromBody] Product product)
+        {
+            try
+            {
+                var existed = await _product.getProductById(product.Id);
+                if (existed == null)
+                {
+                    throw new Exception("No product found with this product id");
+                }
+                return await _product.updateProduct(product);
+
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions here and return an appropriate error response
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
     }
 
     public class Category
@@ -430,10 +451,15 @@ namespace UserAuthDotBet2_WithDatabase
 
     public class Product
     {
+        [JsonPropertyName("id")]
         public int Id { get; set; }
+        [JsonPropertyName("name")]
         public string Name { get; set; }
+        [JsonPropertyName("description")]
         public string Description { get; set; }
+        [JsonPropertyName("image")]
         public string Image { get; set; }
+        [JsonPropertyName("price")]
         public decimal Price { get; set; }
         [JsonPropertyName("category_id")]
         public int CategoryId { get; set; } // Assuming you have a category ID for the product
@@ -444,7 +470,7 @@ namespace UserAuthDotBet2_WithDatabase
         public string Name { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
-        public decimal Price { get; set; }
+        public int Price { get; set; }
         [JsonPropertyName("category_id")]
         public int CategoryId { get; set; } // Assuming you have a category ID for the product
     }
