@@ -6,6 +6,11 @@ public interface IProductRepository
 {
     public Task<List<Product>> get();
     public Task<Product> getProductById(int productId);
+    public Task<bool> updateProduct(Product product);
+
+    public Task<bool> deleteProductById(int productId);
+
+
 }
 
 public class ProductRepository : BaseRepository, IProductRepository
@@ -33,5 +38,34 @@ public class ProductRepository : BaseRepository, IProductRepository
             Id = productId
         });
         return res;
+    }
+
+    public async Task<bool> updateProduct(Product product)
+    {
+        var query = "UPDATE PRODUCTS SET name = @Name , description = @Description , image = @Image, price = @Price, category_id = @CategoryId WHERE id =@Id";
+        var con = NewConnection;
+
+        var affectedRows = await con.ExecuteAsync(query, new
+        {
+            Name = product.Name,
+            Description = product.Description,
+            Image = product.Image,
+            Price = product.Price,
+            CategoryId = product.CategoryId,
+            Id = product.Id
+        });
+        return affectedRows > 0;  // Return true if at least one row was updated
+    }
+
+    public async Task<bool> deleteProductById(int productId)
+    {
+        var query = "DELETE FROM products WHERE id = @ProductId ";
+        var con = NewConnection;
+        var affectedRow = await con.ExecuteAsync(query, new
+        {
+            ProductId = productId
+        });
+
+        return affectedRow > 0;
     }
 }

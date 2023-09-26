@@ -389,7 +389,27 @@ namespace UserAuthDotBet2_WithDatabase
             }
         }
 
+        // instead of this make a new deactivate product because the product is in the orders also
+        [HttpDelete("user")]
+        [Authorize]
+        public async Task<ActionResult<bool>> Deleteproduct([FromQuery] int productId)
+        {
+            try
+            {
+                var product = await _product.getProductById(productId);
+                if (product == null)
+                {
+                    throw new Exception("No product found with this product id");
+                }
+                return await _product.deleteProductById(productId);
 
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions here and return an appropriate error response
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
 
     }
 
