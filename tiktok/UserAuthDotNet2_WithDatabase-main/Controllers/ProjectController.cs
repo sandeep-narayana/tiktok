@@ -474,6 +474,22 @@ namespace UserAuthDotBet2_WithDatabase
             }
         }
 
+        [HttpPost("add_product")]
+        [Authorize]
+        public async Task<ActionResult<Product>> AddProduct([FromBody] ProductDto product)
+        {
+            try
+            {
+                return await _product.addProduct(product);
+
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions here and return an appropriate error response
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
     }
 
     public class Category
