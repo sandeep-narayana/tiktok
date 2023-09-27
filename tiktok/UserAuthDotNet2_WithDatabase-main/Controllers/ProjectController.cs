@@ -432,6 +432,48 @@ namespace UserAuthDotBet2_WithDatabase
             }
         }
 
+        [HttpDelete("user")]
+        [Authorize]
+        public async Task<ActionResult<bool>> DeleteUser([FromQuery] int userId)
+        {
+            try
+            {
+                var user = await _user.getUser(userId);
+                if (user == null)
+                {
+                    throw new Exception("No user found with this user id");
+                }
+                return await _user.deleteUserById(userId);
+
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions here and return an appropriate error response
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        [HttpPut("user")]
+        [Authorize]
+        public async Task<ActionResult<bool>> UpdateUser([FromBody] User user)
+        {
+            try
+            {
+                var existed = await _user.getUser(user.userid);
+                if (existed == null)
+                {
+                    throw new Exception("No user found with this user id");
+                }
+                return await _user.updateUser(user);
+
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions here and return an appropriate error response
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
     }
 
     public class Category

@@ -57,11 +57,12 @@ public class UserRepository : BaseRepository, IUserRepository
 
     public async Task<bool> updateUser(User user)
     {
-        var query = "UPDATE users SET first_name = @FirstName ,last_name = @LastName , image = @Image, role = @Role WHERE user_id =@UserId";
+        var query = "UPDATE users SET email = @Email, first_name = @FirstName ,last_name = @LastName , image = @Image, role = @Role WHERE user_id =@UserId";
         var con = NewConnection;
 
         var affectedRows = await con.ExecuteAsync(query, new
         {
+            Email = user.Email,
             FirstName = user.FirstName,
             LastName = user.LastName,
             Image = user.Image,
@@ -73,7 +74,7 @@ public class UserRepository : BaseRepository, IUserRepository
 
     public async Task<bool> deleteUserById(int userId)
     {
-        var query = "DELETE FROM users WHERE id = @UserId ";
+        var query = "DELETE FROM users WHERE user_id = @UserId ";
         var con = NewConnection;
         var affectedRow = await con.ExecuteAsync(query, new
         {
