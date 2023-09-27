@@ -9,6 +9,10 @@ public interface IUserRepository
     public Task<User> getUser(int id);
     public Task<List<User>> getusers();
 
+    public Task<bool> updateUser(User user);
+
+    public Task<bool> deleteUserById(int userId);
+
 }
 
 public class UserRepository : BaseRepository, IUserRepository
@@ -49,5 +53,33 @@ public class UserRepository : BaseRepository, IUserRepository
         var con = NewConnection;
         var users = await con.QueryAsync<User>(query);
         return users.ToList();
+    }
+
+    public async Task<bool> updateUser(User user)
+    {
+        var query = "UPDATE users SET first_name = @FirstName ,last_name = @LastName , image = @Image, role = @Role WHERE user_id =@UserId";
+        var con = NewConnection;
+
+        var affectedRows = await con.ExecuteAsync(query, new
+        {
+            FirstName = user.FirstName,
+            LastName = user.LastName,
+            Image = user.Image,
+            Role = user.Role,
+            UserId = user.userid
+        });
+        return affectedRows > 0;  // Return true if at least one row was updated
+    }
+
+    public async Task<bool> deleteUserById(int userId)
+    {
+        var query = "DELETE FROM users WHERE id = @UserId ";
+        var con = NewConnection;
+        var affectedRow = await con.ExecuteAsync(query, new
+        {
+            UserId = userId
+        });
+
+        return affectedRow > 0;
     }
 }

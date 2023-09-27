@@ -390,7 +390,7 @@ namespace UserAuthDotBet2_WithDatabase
         }
 
         // instead of this make a new deactivate product because the product is in the orders also
-        [HttpDelete("user")]
+        [HttpDelete("product")]
         [Authorize]
         public async Task<ActionResult<bool>> Deleteproduct([FromQuery] int productId)
         {
@@ -411,7 +411,7 @@ namespace UserAuthDotBet2_WithDatabase
             }
         }
 
-        [HttpPut("user")]
+        [HttpPut("product")]
         [Authorize]
         public async Task<ActionResult<bool>> UpdateProduct([FromBody] Product product)
         {
